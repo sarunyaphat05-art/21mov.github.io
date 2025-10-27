@@ -1,11 +1,11 @@
 /* Reset */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#141414;
-  --accent:#e50914;
-  --muted:#bdbdbd;
+  --bg:#ff6600;
+  --accent:#ff6600;
+  --muted:#000000;
   --card:#1e1e1e;
-  --white:#fff;
+  --white:#ff6600;
 }
 
 body{
@@ -24,7 +24,7 @@ body{
   z-index:50;
 }
 .logo{font-weight:700;font-size:1.4rem;color:var(--accent)}
-.logo span{color:#fff}
+.logo span{color:#000000}
 
 /* Centered auth card */
 .centered{display:flex;align-items:center;justify-content:center;min-height:calc(100vh - 70px)}
@@ -45,7 +45,7 @@ body{
   height:40vh;display:flex;align-items:center;justify-content:center;text-align:center;
   background:linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1)),
     url('/mnt/data/5e44617b-80bb-40d9-b474-15eb8066db4e.jpg');
-  background-size:cover;background-position:center;color:#fff;padding:40px 20px;border-radius:6px;margin:20px;
+  background-size:cover;background-position:center;color:#000000;padding:40px 20px;border-radius:6px;margin:20px;
 }
 .hero-content h1{font-size:2rem;margin-bottom:6px}
 .hero-content p{color:var(--muted)}
