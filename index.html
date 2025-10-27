@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>21Studio - ดูหนังออนไลน์</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">21<span>Studio</span></div>
+    <div id="nav-controls"></div>
+  </header>
+
+  <!-- หน้าล็อกอิน / สมัคร -->
+  <main id="authPage" class="centered">
+    <div class="auth-card">
+      <h2 id="authTitle">ยินดีต้อนรับ</h2>
+
+      <div id="authForms">
+        <!-- Login -->
+        <form id="loginForm" class="form">
+          <input type="text" id="loginEmail" placeholder="อีเมล" required />
+          <input type="password" id="loginPassword" placeholder="รหัสผ่าน" required />
+          <div class="row">
+            <label><input type="checkbox" id="rememberMe" /> จำฉันไว้</label>
+          </div>
+          <button type="submit">เข้าสู่ระบบ</button>
+          <p class="muted">ไม่มีบัญชี? <a href="#" id="showSignup">สร้างบัญชี</a></p>
+        </form>
+
+        <!-- Signup -->
+        <form id="signupForm" class="form hidden">
+          <input type="text" id="signupName" placeholder="ชื่อ" required />
+          <input type="email" id="signupEmail" placeholder="อีเมล" required />
+          <input type="password" id="signupPassword" placeholder="รหัสผ่าน" required />
+          <button type="submit">สร้างบัญชี</button>
+          <p class="muted">มีบัญชีแล้ว? <a href="#" id="showLogin">เข้าสู่ระบบ</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- หน้าแสดงหนัง -->
+  <main id="moviesPage" class="hidden">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>21Studio</h1>
+        <p>เลือกหนังที่คุณชื่นชอบ — คลิกโปสเตอร์เพื่อดูตัวอย่าง</p>
+      </div>
+    </section>
+
+    <section class="movie-section">
+      <h2>หนังยอดนิยม</h2>
+      <div id="movieGrid" class="movie-grid"></div>
+    </section>
+  </main>
+
+  <!-- Popup ตัวอย่าง -->
+  <div id="trailerPopup" class="popup hidden">
+    <div class="popup-inner">
+      <button class="closePopup" id="closeTrailer">&times;</button>
+      <iframe id="trailerFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer id="footer" class="footer">
+    <p>© 2025 21Studio | เว็บตัวอย่างเพื่อการศึกษา</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
